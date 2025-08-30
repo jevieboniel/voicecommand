@@ -38,7 +38,7 @@ def listen():
 
 # 🎵 Play random music from a folder
 def play_music():
-    song_path = "C:/Users/Jevie/OneDrive/Music/Your.mp3"
+    song_path = "C:/Users/Jevie/OneDrive/Desktop/voice/Your.mp3"
     if os.path.exists(song_path):
         os.startfile(song_path)
         return "Playing Your Song"
