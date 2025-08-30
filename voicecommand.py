@@ -38,16 +38,13 @@ def listen():
 
 # 🎵 Play random music from a folder
 def play_music():
-    music_dir = "C:/Users/II/Music"  # change this to your music folder
-    songs = [f for f in os.listdir(music_dir) if f.endswith((".mp3", ".wav"))]
-
-    if songs:
-        song = random.choice(songs)  # pick random song
-        song_path = os.path.join(music_dir, song)
+    song_path = "C:/Users/Jevie/OneDrive/Music/Your.mp3"
+    if os.path.exists(song_path):
         os.startfile(song_path)
-        return f"Playing {song}"
+        return "Playing Your Song"
     else:
-        return "No music files found in the folder."
+        return "Song not found. Please check the file path."
+
 
 def main():
     speak("Hello, Erl Princess baho kag lubot")
