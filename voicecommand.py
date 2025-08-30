@@ -47,7 +47,7 @@ def play_music():
 
 
 def main():
-    speak("Hello, Erl Princess baho kag lubot")
+    speak("Good Morning! Gumising kanang hinayupak ka.")
     
     # Website dictionary
     sites = {
